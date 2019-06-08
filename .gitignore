@@ -1,0 +1,9 @@
+# ignore below mentioned files from current directory
+.terraform
+*.tfstate
+*.tfstate.backup
+
+# ignore below mentioned files from subdirectories
+**/.terraform
+**/*.tfstate
+**/*.tfstate.backup
