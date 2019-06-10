@@ -1,3 +1,2 @@
 # terraform
-terraform with aws
-terraform with gcp
+terraform with aws and gcp
