@@ -55,7 +55,7 @@ resource "aws_security_group" "webserver_securitygroup" {
 # Auto-scaling group 
 resource "aws_autoscaling_group" "webserver_autoscaling" {
     launch_configuration = "${aws_launch_configuration.webserver.id}"
-    availability_zones = ["${data.aws_availability_zones.all.names}"]
+    availability_zones = "${data.aws_availability_zones.all.names}"
     max_size = 6
     min_size = 2
     tag {
